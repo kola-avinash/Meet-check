@@ -1,0 +1,106 @@
+.bg-img {
+    /* The image used */
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url('/images/main-page.jpg');
+    min-height: 1000px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+
+  .navbar-nav li a, .navbar-nav li a:visited{
+      margin: 20px;
+      font-size: large;
+      font-weight: 200;
+      /* border: 1px solid #3a9e3e; */
+      /* border-radius: 15%; */
+      text-decoration: none;
+      color:black;
+      font-weight: 500 ;
+      font-family: sans-serif;
+  }
+  .navbar-nav li a:hover,.navbar-nav li:nth-child(1)>a{
+      background-color: #3a9e3e;
+      border-radius:10%;
+      color: white;
+      transition-duration:0ms
+  }
+
+
+
+  .navbar-toggler{
+      border-color: #3a9e3e;    
+  }
+
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58,158,62, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .text-animation{
+      position:relative;
+      top:300px;
+      justify-content: center;
+      text-align: center;
+      /* color:rgb(15, 128, 118); */
+      color:#3a9e3e;
+      font-family: 'Courgette';
+
+  }
+  .text-animation span{
+      font-size: 70px;
+  }
+
+  /* .thb-heading span{
+      position:relative;
+      text-align: center;
+      float: right;
+      top: 300px;
+      color:black;
+      text-shadow: 1px 1px 2px red, 0 0 0.2em #3a9e3e;
+      text-shadow: 10px;
+      font-size: 80px;
+  }
+   */
+  /* Media Queries */
+
+
+  /* medium screens */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+ 
+}
+
+/* small screens */
+
+    @media (max-width: 767px) {
+        .navbar-nav{
+            background-color: white;
+            text-align: center;
+        }
+        .navbar-nav li a, .navbar-nav li a:visited{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li:nth-child(1)>a{
+            border-radius: 0%;
+        }
+        .fixed-top{
+            position: relative;
+        }
+    
+    }
+
+

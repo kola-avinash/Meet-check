@@ -18,16 +18,17 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img  alt="logo" class="logo">
-                        <style>
-                            .logo{
-                                content: url("images/logo.png");
+                        <!-- logo changing -->
+                            <style>
+                                .logo{
+                                    content: url("images/logo.png");
+                                }
+                                @media (max-width: 767px){
+                                .logo{
+                                    content: url("images/logo3.png");
+                                }
                             }
-                            @media (max-width: 767px){
-                            .logo{
-                                content: url("images/logo3.png");
-                            }
-                        }
-                        </style>
+                            </style>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -65,9 +66,19 @@
             </div>
         </div>
     </div>
-    <div>
-        <!-- <img src="images/planning.jpg" alt=""> -->
-    </div>
+    <div class="container">
+        <div>
+          <a href="menu-categories.html"><div id="menu-tile" style="background-image: url(images/tile1.jpg);"><span>menu</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="single-category.html"><div id="specials-tile" style="background-image: url(images/tile2.jpg);"><span>specials</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="single-category.html"><div id="map-tile" style="background-image: url(images/tile3.jpg);"><span>specials</span></div></a>
+        </div>
+          </a>
+        </div>
+      </div><!-- End of #home-tiles -->
 
 
     

@@ -126,7 +126,7 @@ body {
   }
   .tile-title{
       position: relative;
-      color:#3a9e3e;
+      color:black;
       font-weight:bolder;
       font-size:25px;
       font-family:'Courier New', Courier, monospace;
@@ -140,10 +140,33 @@ body {
     padding: 5px;
     position: relative;
     height: 70%;
-    top: 70%;
+    top: 28%;
     
 }
+.eltext h1, .eltext p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.elaborate{
+ background:black;
+ color:rgb(140, 217, 223);
+ font-weight: 500;
+
+ /* margin-bottom: 5px; */
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hostimage:hover .elaborate,.regimage:hover .elaborate,.groupimage:hover .elaborate{
+width: 418px;
+height: 300px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.9; 
+}
   
 
   /* Media Queries */

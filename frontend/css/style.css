@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     height: 100%;
-    width: 100%
+    width: 100%;
   }
   
 .bg-img {
@@ -172,6 +172,17 @@ height: 300px;
 
 /* start of the sharng page tiles */
 
+.bg-image1{
+background-image: url('../images/sharing.jpg');
+height: 100%;
+background-size: cover;
+min-width: 1520px;  
+min-height:1000px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
 
   /* Media Queries */
 

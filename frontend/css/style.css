@@ -172,11 +172,10 @@ height: 300px;
 
 /* start of the sharng page tiles */
 
-.bg-image1{
+#bg-image1{
 background-image: url('../images/sharing.jpg');
 height: 100%;
 background-size: cover;
-min-width: 1520px;  
 min-height:1000px;
 background-size: cover;
 background-position: center;

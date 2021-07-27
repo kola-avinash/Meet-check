@@ -87,7 +87,10 @@ $(document).ready(function(){
         };
 
 
-  
+
+// sharing page text animation
+
+
 // contact us page Script
 
   const name = document.getElementById('name');

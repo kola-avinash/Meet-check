@@ -1,0 +1,263 @@
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background:#e9ebee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        font-family: sans-serif;
+    }
+
+    .logo{
+        content: url("../images/logo.png");
+      }
+      
+      /* Position the navbar container inside the image */
+
+      .navbar-nav li a, .navbar-nav li a:visited{
+          margin: 20px;
+          font-size: large;
+          font-weight: 200;
+          /* border: 1px solid #3a9e3e; */
+          /* border-radius: 15%; */
+          text-decoration: none;
+          color:black;
+          font-weight: 500 ;
+          font-family: sans-serif;
+      }
+      .navbar-nav li a:hover,.navbar-nav li:nth-child(2)>a{
+          background-color: #3a9e3e;
+          border-radius:10%;
+          color: white;
+          transition-duration:0ms
+      }
+    
+    
+    
+      .navbar-toggler{
+          border-color: #3a9e3e;    
+      }
+    
+      .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58,158,62, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+
+    .container{
+        width: 80%;
+        position: relative;
+        top: 10%;
+        padding: 20px;
+        height:100%
+    }
+    
+    .login ,.register{width: 50%}
+    
+    /*Start Login Style*/
+    .login{
+        float:left;
+        background-color: #fafafa;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .login h1{
+        margin-bottom: 40px;
+        font-size: 2.5em;
+    }
+    
+    input[type="email"] , input[type="password"],input[type="text"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: none;
+        background-color: #eeeeef;
+    }
+    input[type="checkbox"]{
+        float: left;
+        margin-right: 5px;
+    }
+    .login span{
+        float: left
+    }
+    .login a{
+        float: right;
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s all ease-in-out;
+    }
+    .login a:hover{color: #9526a9;font-weight: bold}
+    .login button{
+        width: 100%;
+        margin: 30px 0;
+        padding: 10px;
+        border: none;
+        background-color: #3a9e3e;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+    }
+    .login button:hover{
+        width:97%;
+        font-size: 22px;
+        border-radius: 5px;
+        
+    }
+    .login hr{
+        width: 30%;
+        display: inline-block
+    }
+    
+    .login p{
+        display: inline-block;
+        margin: 0px 10px 30px;
+    }
+    .login ul{
+        list-style: none;
+        margin-bottom:40px;  
+    }
+    .login ul li{
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .login ul li:hover{opacity: 0.6}
+    .login ul li:last-child{margin-right: 0}
+    .login .copyright{
+        display: inline-block;
+        float: none;
+    }
+    /*Start Register Style*/
+    .register{
+        float: right;
+        background-image: linear-gradient(135deg, #23212f 5%, #3a9e3e 95%);
+        height: 100%;
+        color:#fff;
+        border-radius:  0 10px 10px  0;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .register h2{
+        margin: 30px 0;
+        font-size: 50px;
+        letter-spacing: 3px
+    }
+    .register p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .register button{
+        background-color: transparent;
+        border: 1px solid #FFF;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition:0.2s all  ease-in-out;
+    }
+    .register button:hover{
+        color: #3a9e3e;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .signup{
+        margin-bottom: 20px;
+    }
+    .signup h1{
+        margin-bottom: 40px;
+        font-size: 2.5em;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+    footer {
+      position: absolute;
+      font-family: Roboto;
+      margin-top: 20px;
+      bottom: -50%;
+    }
+
+    .footer-distributed {
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: normal 16px sans-serif;
+      padding: 45px 50px;
+    }
+
+    .footer-distributed .footer-left p {
+      color: #8f9296;
+      font-size: 14px;
+      margin: 0;
+    }
+    /* Footer links */
+
+    .footer-distributed p.footer-links {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0 0 10px;
+      padding: 0;
+      transition: ease .25s;
+    }
+
+    .footer-distributed p.footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+      transition: ease .25s;
+    }
+
+    .footer-distributed .footer-links a:before {
+      content: "·";
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    .footer-distributed .footer-links .link-1:before {
+      content: none;
+    }
+
+    .footer-distributed .footer-right {
+      float: right;
+      margin-top: 6px;
+      max-width: 180px;
+    }
+
+    .footer-distributed .footer-right a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-left: 3px;
+      transition:all .25s;
+    }
+
+    .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+    .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+
+    
+
+    
